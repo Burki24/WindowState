@@ -1,0 +1,22 @@
+{
+    "elements":
+    [
+        { "type": "Label", "label": "Settings" },
+        { "type": "SelectVariable", "name": "Reed1ID", "caption": "Reed Switch 1" },
+        { "type": "SelectVariable", "name": "Reed2ID", "caption": "Reed Switch 2" },
+        { "type": "Select", "name": "WindowOpenMode", "caption": "Window Open",
+            "options": [
+                { "label": "Reed 1 = FALSE | Reed 2 = FALSE", "value": 0 },
+                { "label": "Reed 1 = FALSE | Reed 2 = TRUE", "value": 1 },
+                { "label": "Reed 1 = TRUE | Reed 2 = FALSE", "value": 2 },
+                { "label": "Reed 1 = TRUE | Reed 2 = TRUE", "value": 3 }
+        ]},
+        { "type": "Select", "name": "WindowTiltMode", "caption": "Window Tilt",
+            "options": [
+                { "label": "Reed 1 = FALSE | Reed 2 = FALSE", "value": 0 },
+                { "label": "Reed 1 = FALSE | Reed 2 = TRUE", "value": 1 },
+                { "label": "Reed 1 = TRUE | Reed 2 = FALSE", "value": 2 },
+                { "label": "Reed 1 = TRUE | Reed 2 = TRUE", "value": 3 }
+        ]}
+    ]
+}

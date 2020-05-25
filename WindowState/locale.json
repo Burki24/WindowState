@@ -1,0 +1,15 @@
+{
+    "translations": {
+        "de": {
+            "Settings": "Einstellungen",
+            "Reed Switch 1": "Magnetkontakt 1",
+            "Reed Switch 2": "Magnetkontakt 2",
+            "Window Open": "Fenster geöffnet",
+            "Window Tilt": "Fenster gekippt",
+            "Reed 1 = FALSE | Reed 2 = FALSE": "Kontakt 1 = FALSE | Kontakt 2 = FALSE",
+            "Reed 1 = FALSE | Reed 2 = TRUE": "Kontakt 1 = FALSE | Kontakt 2 = TRUE",
+            "Reed 1 = TRUE | Reed 2 = FALSE": "Kontakt 1 = TRUE | Kontakt 2 = FALSE",
+            "Reed 1 = TRUE | Reed 2 = TRUE": "Kontakt 1 = TRUE | Kontakt 2 = TRUE"
+        }
+    }
+}

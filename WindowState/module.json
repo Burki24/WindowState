@@ -1,0 +1,15 @@
+{
+  "id": "{AEE94AFD-9B51-7768-0039-8D4629FDFE39}",
+  "name": "WindowState",
+  "type": 3,
+  "vendor": "Schrader IT-Beratung",
+  "aliases":
+  [
+    "WindowState",
+    "Fensterzustand"
+      ],
+  "parentRequirements": [],
+  "childRequirements": [],
+  "implemented": [],
+  "prefix": "SIT"
+}
