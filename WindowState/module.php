@@ -12,9 +12,6 @@
             $this->RegisterPropertyInteger("WindowOpenMode", 0);
             $this->RegisterPropertyInteger("WindowTiltMode", 0);
 
-            if (IPS_VariableProfileExists("SIT.WindowState")){
-                IPS_DeleteVariableProfile("SIT.WindowState");
-            }
             IPS_CreateVariableProfile("SIT.WindowState", 1);
             IPS_SetVariableProfileValues("SIT.WindowState", 0, 2, 0);
             IPS_SetVariableProfileDigits("SIT.WindowState", 0);
@@ -31,14 +28,13 @@
             // Diese Zeile nicht löschen
             parent::ApplyChanges();
 
-            if (IPS_GetKernelRunlevel() == KR_READY) {
-                $this->RegisterMessage($this->ReadPropertyInteger("Reed1ID"), 10603 /* VM_UPDATE */);
-                $this->RegisterMessage($this->ReadPropertyInteger("Reed2ID"), 10603 /* VM_UPDATE */);
-            }
+            $this->RegisterMessage($this->ReadPropertyInteger("Reed1ID"), 10603 /* VM_UPDATE */);
+            $this->RegisterMessage($this->ReadPropertyInteger("Reed2ID"), 10603 /* VM_UPDATE */);
+          
         }
 
         public function MessageSink($TimeStamp, $SenderID, $Message, $Data) {
-            $this->GetWindowState();
+            $this->UpdateWindowState();
         }
 
         /**
@@ -48,7 +44,7 @@
         * ABC_MeineErsteEigeneFunktion($id);
         *
         */
-        public function GetWindowState() {
+        private function UpdateWindowState() {
             $Reed1 = GetValue($this->ReadPropertyInteger("Reed1ID"));
             $Reed2 = GetValue($this->ReadPropertyInteger("Reed2ID"));
 
