@@ -12,12 +12,14 @@
             $this->RegisterPropertyInteger("WindowOpenMode", 0);
             $this->RegisterPropertyInteger("WindowTiltMode", 0);
 
-            IPS_CreateVariableProfile("SIT.WindowState", 1);
-            IPS_SetVariableProfileValues("SIT.WindowState", 0, 2, 0);
-            IPS_SetVariableProfileDigits("SIT.WindowState", 0);
-            IPS_SetVariableProfileAssociation("SIT.WindowState", 0, "geschlossen", "Window", -1);
-            IPS_SetVariableProfileAssociation("SIT.WindowState", 1, "gekippt", "Window", -1);
-            IPS_SetVariableProfileAssociation("SIT.WindowState", 2, "geöffnet", "Window", -1);
+            if (!IPS_VariableProfileExists("SIT.WindowState")){
+                IPS_CreateVariableProfile("SIT.WindowState", 1);
+                IPS_SetVariableProfileValues("SIT.WindowState", 0, 2, 0);
+                IPS_SetVariableProfileDigits("SIT.WindowState", 0);
+                IPS_SetVariableProfileAssociation("SIT.WindowState", 0, "geschlossen", "Window", -1);
+                IPS_SetVariableProfileAssociation("SIT.WindowState", 1, "gekippt", "Window", -1);
+                IPS_SetVariableProfileAssociation("SIT.WindowState", 2, "geöffnet", "Window", -1);
+            }
 
             $this->RegisterVariableInteger("WindowState", "WindowState", "SIT.WindowState", 1);
 
@@ -30,7 +32,7 @@
 
             $this->RegisterMessage($this->ReadPropertyInteger("Reed1ID"), 10603 /* VM_UPDATE */);
             $this->RegisterMessage($this->ReadPropertyInteger("Reed2ID"), 10603 /* VM_UPDATE */);
-          
+
         }
 
         public function MessageSink($TimeStamp, $SenderID, $Message, $Data) {
