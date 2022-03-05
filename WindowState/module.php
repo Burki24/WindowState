@@ -56,10 +56,10 @@
         private function UpdateWindowState() {
             $Reed1 = GetValue($this->ReadPropertyInteger("Reed1ID"));
             $Reed2 = GetValue($this->ReadPropertyInteger("Reed2ID"));
-            $Reed2 = GetValue($this->ReadPropertyInteger("Reed3ID"));
-            $Reed2 = GetValue($this->ReadPropertyInteger("Reed4ID"));
-            $Reed2 = GetValue($this->ReadPropertyInteger("Reed5ID"));
-            $Reed2 = GetValue($this->ReadPropertyInteger("Reed6ID"));
+            $Reed3 = GetValue($this->ReadPropertyInteger("Reed3ID"));
+            $Reed4 = GetValue($this->ReadPropertyInteger("Reed4ID"));
+            $Reed5 = GetValue($this->ReadPropertyInteger("Reed5ID"));
+            $Reed6 = GetValue($this->ReadPropertyInteger("Reed6ID"));
             $WindowOpenMode = $this->ReadPropertyInteger("WindowOpenMode");
             
             $this->SendDebug("WindowState", "WindowOpenMode: " . $WindowOpenMode, 0);
