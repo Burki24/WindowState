@@ -70,8 +70,8 @@
             $this->SendDebug("WindowState", "Reed 5: " . (int)$Reed5, 0);
             $this->SendDebug("WindowState", "Reed 6: " . (int)$Reed6, 0);
             $WindowState = 0;
-            if (!$Reed1 && !$Reed2 && !$Reed3 && !$Reed4 && !$Reed5 && !$Reed6){
-                $WindowState = 2;
+            if (!$Reed1 || !$Reed2 || !$Reed3 || !$Reed4 || !$Reed5 || !$Reed6){
+                $WindowState = 1;
             }
             SetValue($this->GetIDForIdent("WindowState"), $WindowState);
             $this->SendDebug("WindowState", "Window State: " . (int)$WindowState, 0);
