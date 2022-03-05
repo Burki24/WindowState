@@ -20,7 +20,7 @@
                 IPS_SetVariableProfileAssociation($Profile, 1, "geöffnet", "Window", -1);
             }
 
-            $this->RegisterVariableInteger("WindowState", "WindowState", "SIT.WindowState", 1);
+            $this->RegisterVariableInteger("WindowGroup", "WindowGroup", "WGS.WindowState", 1);
 
         }
 
