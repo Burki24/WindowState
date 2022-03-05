@@ -5,6 +5,9 @@
         { "type": "SelectVariable", "name": "Reed1ID", "caption": "Reed Switch 1" },
         { "type": "SelectVariable", "name": "Reed2ID", "caption": "Reed Switch 2" },
         { "type": "SelectVariable", "name": "Reed3ID", "caption": "Reed Switch 3" },
+        { "type": "SelectVariable", "name": "Reed3ID", "caption": "Reed Switch 4" },
+        { "type": "SelectVariable", "name": "Reed3ID", "caption": "Reed Switch 5" },
+        { "type": "SelectVariable", "name": "Reed3ID", "caption": "Reed Switch 6" },
         { "type": "Select", "name": "WindowOpenMode", "caption": "Window Open",
             "options": [
                 { "label": "Reed 1 = FALSE | Reed 2 = FALSE | Reed 3 = FALSE", "value": 0 },
