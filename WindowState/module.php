@@ -73,7 +73,7 @@
             if (($Reed1 != 1) || ($Reed2 != 1) || ($Reed3 != 1) || ($Reed4 != 1) || ($Reed5 != 1) || ($Reed6 != 1)){
                 $WindowGroup = 1;
             }
-            SetValue($this->GetIDForIdent("WindowGroup"), $WindowState);
-            $this->SendDebug("WindowGroup", "Window Group: " . (int)$WindowState, 0);
+            SetValue($this->GetIDForIdent("WindowGroup"), $WindowGroup);
+            $this->SendDebug("WindowGroup", "Window Group: " . (int)$WindowGroup, 0);
         }
     }
