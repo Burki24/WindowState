@@ -24,7 +24,7 @@
                 IPS_SetVariableProfileAssociation($Profile, 1, "geöffnet", "Window", -1);
             }
 
-            $this->RegisterVariableInteger("WindowGroup", "WindowGroup", "WGS.WindowState", 1);
+            $this->RegisterVariableInteger("WindowGroup", "WindowGroup", "WGS.WindowGroup", 1);
 
         }
 
@@ -62,18 +62,18 @@
             $Reed6 = GetValue($this->ReadPropertyInteger("Reed6ID"));
             $WindowOpenMode = $this->ReadPropertyInteger("WindowOpenMode");
             
-            $this->SendDebug("WindowState", "WindowOpenMode: " . $WindowOpenMode, 0);
-            $this->SendDebug("WindowState", "Reed 1: " . (int)$Reed1, 0);
-            $this->SendDebug("WindowState", "Reed 2: " . (int)$Reed2, 0);
-            $this->SendDebug("WindowState", "Reed 3: " . (int)$Reed3, 0);
-            $this->SendDebug("WindowState", "Reed 4: " . (int)$Reed4, 0);
-            $this->SendDebug("WindowState", "Reed 5: " . (int)$Reed5, 0);
-            $this->SendDebug("WindowState", "Reed 6: " . (int)$Reed6, 0);
+            $this->SendDebug("WindowGroup", "WindowOpenMode: " . $WindowOpenMode, 0);
+            $this->SendDebug("WindowGroup", "Reed 1: " . (int)$Reed1, 0);
+            $this->SendDebug("WindowGroup", "Reed 2: " . (int)$Reed2, 0);
+            $this->SendDebug("WindowGroup", "Reed 3: " . (int)$Reed3, 0);
+            $this->SendDebug("WindowGroup", "Reed 4: " . (int)$Reed4, 0);
+            $this->SendDebug("WindowGroup", "Reed 5: " . (int)$Reed5, 0);
+            $this->SendDebug("WindowGroup", "Reed 6: " . (int)$Reed6, 0);
             $WindowState = 0;
-            if ($Reed1 > 0 || $Reed2 > 0 || $Reed3 > 0|| $Reed4 > 0 || $Reed5 > 0 || $Reed6 > 0){
-                $WindowState = 1;
+            if ($Reed1 != 0 || $Reed2 != 0 || $Reed3 != 0|| $Reed4 != 0 || $Reed5 != 0 || $Reed6 != 0){
+                $WindowGroup = 1;
             }
-            SetValue($this->GetIDForIdent("WindowState"), $WindowState);
-            $this->SendDebug("WindowState", "Window State: " . (int)$WindowState, 0);
+            SetValue($this->GetIDForIdent("WindowGroup"), $WindowState);
+            $this->SendDebug("WindowGroup", "Window Group: " . (int)$WindowState, 0);
         }
     }
