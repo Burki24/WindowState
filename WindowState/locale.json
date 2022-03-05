@@ -13,7 +13,7 @@
             "Reed 1 = TRUE | Reed 2 = FALSE | Reed 3 = FALSE": "Kontakt 1 = TRUE | Kontakt 2 = FALSE | Kontakt 3 = FALSE",
             "Reed 1 = TRUE | Reed 2 = FALSE | Reed 3 = TRUE": "Kontakt 1 = TRUE | Kontakt 2 = FALSE | Kontakt 3 = TRUE",
             "Reed 1 = TRUE | Reed 2 = TRUE | Reed 3 = TRUE": "Kontakt 1 = TRUE | Kontakt 2 = TRUE | Kontakt 3 = TRUE",
-            "Reed 1 = TRUE | Reed 2 = TRUE | Reed 3 = FALSE": "Kontakt 1 = TRUE | Kontakt 2 = TRUE | Kontakt 3 = FALSE",
+            "Reed 1 = TRUE | Reed 2 = TRUE | Reed 3 = FALSE": "Kontakt 1 = TRUE | Kontakt 2 = TRUE | Kontakt 3 = FALSE"
         }
     }
 }
