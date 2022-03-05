@@ -1,12 +1,12 @@
 {
   "id": "{4247A73A-374B-B6C5-7809-FBFC146A6152}",
   "name": "WindowGroupState",
-  "author": "Burkhard Kneiseler",
+  "author": "Burki24",
   "url": "https://github.com/Burki24/WindowState",
   "compatibility": {
       "version": "5.5"
   },
   "version": "1.0",
-  "build": 6,
+  "build": 7,
   "date": 5
 }
