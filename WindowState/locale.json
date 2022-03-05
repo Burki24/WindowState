@@ -2,14 +2,19 @@
     "translations": {
         "de": {
             "Settings": "Einstellungen",
-            "Reed Switch 1": "Magnetkontakt 1",
-            "Reed Switch 2": "Magnetkontakt 2",
+            "Reed 1": "Kontakt 1",
+            "Reed 2": "Kontakt 2",
+            "Reed 3": "Kontakt 3",
             "Window Open": "Fenster geöffnet",
             "Window Tilt": "Fenster gekippt",
-            "Reed 1 = FALSE | Reed 2 = FALSE": "Kontakt 1 = FALSE | Kontakt 2 = FALSE",
-            "Reed 1 = FALSE | Reed 2 = TRUE": "Kontakt 1 = FALSE | Kontakt 2 = TRUE",
-            "Reed 1 = TRUE | Reed 2 = FALSE": "Kontakt 1 = TRUE | Kontakt 2 = FALSE",
-            "Reed 1 = TRUE | Reed 2 = TRUE": "Kontakt 1 = TRUE | Kontakt 2 = TRUE"
+            "Reed 1 = FALSE | Reed 2 = FALSE | Reed 3 = FALSE": "Kontakt 1 = FALSE | Kontakt 2 = FALSE | Kontakt 3 = FALSE",
+            "Reed 1 = FALSE | Reed 2 = FALSE | Reed 3 = TRUE": "Kontakt 1 = FALSE | Kontakt 2 = FALSE | Kontakt 3 = TRUE",
+            "Reed 1 = FALSE | Reed 2 = TRUE | Reed 3 = TRUE": "Kontakt 1 = FALSE | Kontakt 2 = TRUE | Kontakt 3 = TRUE",
+            "Reed 1 = FALSE | Reed 2 = TRUE | Reed 3 = FALSE": "Kontakt 1 = FALSE | Kontakt 2 = TRUE | Kontakt 3 = FALSE",
+            "Reed 1 = TRUE | Reed 2 = FALSE | Reed 3 = FALSE": "Kontakt 1 = TRUE | Kontakt 2 = FALSE | Kontakt 3 = FALSE",
+            "Reed 1 = TRUE | Reed 2 = FALSE | Reed 3 = TRUE": "Kontakt 1 = TRUE | Kontakt 2 = FALSE | Kontakt 3 = TRUE",
+            "Reed 1 = TRUE | Reed 2 = TRUE | Reed 3 = TRUE": "Kontakt 1 = TRUE | Kontakt 2 = TRUE | Kontakt 3 = TRUE",
+            "Reed 1 = TRUE | Reed 2 = TRUE | Reed 3 = FALSE": "Kontakt 1 = TRUE | Kontakt 2 = TRUE | Kontakt 3 = FALSE",
         }
     }
 }

@@ -1,15 +1,15 @@
 {
-  "id": "{AEE94AFD-9B51-7768-0039-8D4629FDFE39}",
-  "name": "WindowState",
+  "id": "{4247A73A-374B-B6C5-7809-FBFC146A6152}",
+  "name": "WindowGroupState",
   "type": 3,
   "vendor": "",
   "aliases":
   [
-    "WindowState",
-    "Fensterzustand"
+    "WindowGroupState",
+    "Fenstergruppenzustand"
       ],
   "parentRequirements": [],
   "childRequirements": [],
   "implemented": [],
-  "prefix": "SIT"
+  "prefix": "WGS"
 }
