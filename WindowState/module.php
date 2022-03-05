@@ -1,6 +1,6 @@
 <?php
     // Klassendefinition
-    class WindowState extends IPSModule {
+    class WindowGroupState extends IPSModule {
 
         // Überschreibt die interne IPS_Create($id) Funktion
         public function Create() {
