@@ -11,7 +11,7 @@
             $this->RegisterPropertyInteger("Reed2ID", 0);
             $this->RegisterPropertyInteger("Reed3ID", 0);
             $this->RegisterPropertyInteger("WindowOpenMode", 0);
-            $Profile = {"WGS.WindowState"};
+            $Profile = "WGS.WindowState";
             if (!IPS_VariableProfileExists($Profile)){
                 IPS_CreateVariableProfile($Profile, 1);
                 IPS_SetVariableProfileValues($Profile, 0, 2, 0);
