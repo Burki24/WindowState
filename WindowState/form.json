@@ -4,9 +4,6 @@
         { "type": "Label", "label": "Reeds Settings" },
         { "type": "SelectVariable", "name": "Reed1ID", "caption": "Reed Switch 1" },
         { "type": "SelectVariable", "name": "Reed2ID", "caption": "Reed Switch 2" },
-        { "type": "SelectVariable", "name": "Reed3ID", "caption": "Reed Switch 3" },
-        { "type": "SelectVariable", "name": "Reed4ID", "caption": "Reed Switch 4" },
-        { "type": "SelectVariable", "name": "Reed5ID", "caption": "Reed Switch 5" },
-        { "type": "SelectVariable", "name": "Reed6ID", "caption": "Reed Switch 6" }
+        { "type": "SelectVariable", "name": "Reed3ID", "caption": "Reed Switch 3" }
     ]
 }
