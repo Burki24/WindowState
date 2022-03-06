@@ -1,8 +1,6 @@
 {
     "elements":
-    [
-        { "type": "Label", "label": "Anzahl der Kontakte"},
-        { "type": "NumberSpinner", "Name": "Number of Reeds", "minimum": 2 , "maximum": 10, "caption": "Number of Reeds" },        
+    [      
         { "type": "Label", "label": "Reeds Settings" },
         { "type": "SelectVariable", "name": "Reed1ID", "caption": "Reed Switch 1" },
         { "type": "SelectVariable", "name": "Reed2ID", "caption": "Reed Switch 2" },
