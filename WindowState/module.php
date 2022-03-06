@@ -47,7 +47,7 @@
         * ABC_MeineErsteEigeneFunktion($id);
         *
         */
-        private function UpdateWindowState() {
+        private function UpdateWindowGroup() {
             $Reed1 = GetValue($this->ReadPropertyInteger("Reed1ID"));
             $Reed2 = GetValue($this->ReadPropertyInteger("Reed2ID"));
             $Reed3 = GetValue($this->ReadPropertyInteger("Reed3ID"));
@@ -59,7 +59,7 @@
             $this->SendDebug("WindowGroup", "Reed 2: " . (int)$Reed2, 0);
             $this->SendDebug("WindowGroup", "Reed 3: " . (int)$Reed3, 0);
             $this->SendDebug("WindowGroup", "Reed 4: " . (int)$Reed3, 0);
-            $WindowState = 0;
+            $WindowGroup = 0;
             if (($Reed1 != 1) || ($Reed2 != 1) || ($Reed3 != 1) || ($Reed4 != 1)){
                 $WindowGroup = 1;
             }
