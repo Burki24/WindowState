@@ -10,6 +10,7 @@
             $this->RegisterPropertyInteger("Reed1ID", 0);
             $this->RegisterPropertyInteger("Reed2ID", 0);
             $this->RegisterPropertyInteger("Reed3ID", 0);
+            $this->RegisterPropertyInteger("Reed4ID", 0);
             $this->RegisterPropertyInteger("WindowOpenMode", 0);
             $Profile = "WGS.WindowGroup";
             if (!IPS_VariableProfileExists($Profile)){
@@ -32,6 +33,7 @@
             $this->RegisterMessage($this->ReadPropertyInteger("Reed1ID"), 10603 /* VM_UPDATE */);
             $this->RegisterMessage($this->ReadPropertyInteger("Reed2ID"), 10603 /* VM_UPDATE */);
             $this->RegisterMessage($this->ReadPropertyInteger("Reed3ID"), 10603 /* VM_UPDATE */);
+            $this->RegisterMessage($this->ReadPropertyInteger("Reed4ID"), 10603 /* VM_UPDATE */);
         }
 
         public function MessageSink($TimeStamp, $SenderID, $Message, $Data) {
@@ -49,14 +51,16 @@
             $Reed1 = GetValue($this->ReadPropertyInteger("Reed1ID"));
             $Reed2 = GetValue($this->ReadPropertyInteger("Reed2ID"));
             $Reed3 = GetValue($this->ReadPropertyInteger("Reed3ID"));
+            $Reed4 = GetValue($this->ReadPropertyInteger("Reed4ID"));
             $WindowOpenMode = $this->ReadPropertyInteger("WindowOpenMode");
             
             $this->SendDebug("WindowGroup", "WindowOpenMode: " . $WindowOpenMode, 0);
             $this->SendDebug("WindowGroup", "Reed 1: " . (int)$Reed1, 0);
             $this->SendDebug("WindowGroup", "Reed 2: " . (int)$Reed2, 0);
             $this->SendDebug("WindowGroup", "Reed 3: " . (int)$Reed3, 0);
+            $this->SendDebug("WindowGroup", "Reed 4: " . (int)$Reed3, 0);
             $WindowState = 0;
-            if (($Reed1 != 1) || ($Reed2 != 1) || ($Reed3 != 1)){
+            if (($Reed1 != 1) || ($Reed2 != 1) || ($Reed3 != 1) || ($Reed4 != 1)){
                 $WindowGroup = 1;
             }
             SetValue($this->GetIDForIdent("WindowGroup"), $WindowGroup);
